@@ -1,6 +1,6 @@
-[randomify - v1.1.0](README.md) › [Globals](globals.md)
+[randomify - v1.1.1](README.md) › [Globals](globals.md)
 
-# randomify - v1.1.0
+# randomify - v1.1.1
 
 # Randomify
 
@@ -26,23 +26,5 @@ const { random } = require("randomify");
 console.log(random`Hello ${["sir", "ma'am"]}, I would like a ${["cheeseburger", "drink", "pizza", "job"]}.`)
 ```
 
-## Functions
-
-### random
-``random`Picks random elements from arrays. ${["So cool!", "Very cool.]}` ``
-
-> Template literal.
-> The placeholders can be either arrays, or any. If it's an array, it will pick a random element from it. If not, it will just insert the placeholder.
-
-### pick
-`pick(["yes", "no", 1, 2])`
-
-> Picks a random element from an array.
-
-### randint
-`randint(1, 5, false) // randint(min, max, decimals)`
-
-> Returns a random number between the provided minimum and maximum values. If decimals is true, the output will be a random floating point number between min and max instead.
-
-### range
-`y`
+## Documentation
+View the documentation [here](docs/globals.md)

@@ -1,4 +1,4 @@
-[randomify - v1.1.0](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
+[randomify - v1.1.1](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
 
 # External module: "index"
 
@@ -6,7 +6,7 @@
 
 ### Functions
 
-* [join](_index_.md#private-const-join)
+* [join](_index_.md#const-join)
 * [pick](_index_.md#const-pick)
 * [randint](_index_.md#const-randint)
 * [random](_index_.md#const-random)
@@ -14,11 +14,11 @@
 
 ## Functions
 
-### `Private` `Const` join
+### `Const` join
 
 ▸ **join**<**T**>(`array`: T[], `separator`: string | function): *undefined | string*
 
-Defined in index.ts:7
+Defined in index.ts:6
 
 Join an array with a function or string.
 
@@ -41,7 +41,7 @@ ___
 
 ▸ **pick**<**T**>(`array`: T[]): *T*
 
-Defined in index.ts:16
+Defined in index.ts:15
 
 Pick a random element from an array.
 
@@ -63,7 +63,7 @@ ___
 
 ▸ **randint**(`min`: number, `max`: number, `decimals`: boolean): *number*
 
-Defined in index.ts:32
+Defined in index.ts:33
 
 Returns a random integer from min to max, but never reaching max.
 
@@ -73,7 +73,7 @@ Name | Type | Default | Description |
 ------ | ------ | ------ | ------ |
 `min` | number | - | The minimum value. |
 `max` | number | - | The maximum value. |
-`decimals` | boolean | false | Whether to have decimals in the output. |
+`decimals` | boolean | false | Whether to have decimals in the output. ``` randint(1, 5) // 1, 2, 3, 4 randint(1, 5, true) // Any float between 1 and 5. ```  |
 
 **Returns:** *number*
 
@@ -83,7 +83,7 @@ ___
 
 ▸ **random**(`strings`: TemplateStringsArray, ...`added`: any[]): *undefined | string*
 
-Defined in index.ts:23
+Defined in index.ts:22
 
 A template literal tag that chooses random elements from its placeholders.
 
@@ -102,7 +102,7 @@ ___
 
 ▸ **range**(`min`: number, `max`: number): *any[]*
 
-Defined in index.ts:39
+Defined in index.ts:40
 
 Gets a list with values ranging from the min value to max value, excluding the max value.
 
