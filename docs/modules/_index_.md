@@ -1,4 +1,4 @@
-[randomify - v1.0.2](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
+[randomify - v1.1.0](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
 
 # External module: "index"
 
