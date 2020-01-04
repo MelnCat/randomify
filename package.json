@@ -1,11 +1,11 @@
 {
-	"name": "rand-js",
+	"name": "randomify",
 	"version": "1.0.0",
 	"main": "dist/index.js",
-	"repository": "https://github.com/TNThacker2015/rand-js",
-	"author": "TNThacker2015 <tnthacker2015@gmail.com>",
+	"repository": "https://github.com/TNThacker2015/randomify",
+	"author": "William Will <tnthacker2015@gmail.com>",
 	"types": "dist/index.d.ts",
-	"license": "MIT",
+	"license": "GPL-3.0",
 	"scripts": {
 		"prepublish": "tsc"
 	},
@@ -14,5 +14,13 @@
 		"@typescript-eslint/parser": "^2.14.0",
 		"eslint": "^6.8.0",
 		"typescript": "^3.7.4"
-	}
+	},
+	"keywords": [
+		"random",
+		"randjs",
+		"string",
+		"generator",
+		"template",
+		"rand"
+	]
 }
