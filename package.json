@@ -1,18 +1,20 @@
 {
 	"name": "randomify",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"main": "dist/index.js",
 	"repository": "https://github.com/TNThacker2015/randomify",
 	"author": "William Will <tnthacker2015@gmail.com>",
 	"types": "dist/index.d.ts",
 	"license": "GPL-3.0",
 	"scripts": {
-		"prepublish": "tsc"
+		"prepare": "tsc && npx typedoc --plugin typedoc-plugin-markdown ./src/"
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^2.14.0",
 		"@typescript-eslint/parser": "^2.14.0",
 		"eslint": "^6.8.0",
+		"typedoc": "^0.15.6",
+		"typedoc-plugin-markdown": "^2.2.14",
 		"typescript": "^3.7.4"
 	},
 	"keywords": [

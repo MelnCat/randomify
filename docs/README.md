@@ -1,3 +1,7 @@
+[randomify - v1.0.2](README.md) › [Globals](globals.md)
+
+# randomify - v1.0.2
+
 # Randomify
 
 ![Randomify](https://i.imgur.com/SwD2UAY.png)
