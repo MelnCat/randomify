@@ -23,7 +23,7 @@ export const pick = <T>(array: T[]): T => array[Math.floor(Math.random() * array
  * @param strings - The strings from the template literal.
  * @param added - The placeholders. They can be either "any" or an array. If it's an array, it will pick a random element from it.
  */
-export const random = (strings: TemplateStringsArray, ...added: any[]) => join(Array.from(strings), (x, i) => String(added instanceof Array ? pick(added[i]) : added));
+export const random = (strings: TemplateStringsArray, ...added: any[]) => join(Array.from(strings), (x, i) => String(added[i] instanceof Array ? pick(added[i]) : added[i]))!;
 /**
  * ```ts
  * randint(1, 5) // 1, 2, 3, 4
@@ -56,3 +56,7 @@ export const pickString = (str: string, len = str.length) => Array(len)
 	.fill(0)
 	.map(() => str[Math.floor(Math.random() * str.length)])
 	.join("");
+export const randomColor = () => `#${randint(0, 0x1000000)
+	.toString(16)
+	.toUpperCase()
+	.padStart(6, "0")}`;

@@ -1,4 +1,4 @@
-[randomify - v1.2.2](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
+[randomify - v1.3.0](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
 
 # External module: "index"
 
@@ -11,6 +11,7 @@
 * [pickString](_index_.md#const-pickstring)
 * [randint](_index_.md#const-randint)
 * [random](_index_.md#const-random)
+* [randomColor](_index_.md#const-randomcolor)
 * [range](_index_.md#const-range)
 
 ## Functions
@@ -19,7 +20,7 @@
 
 ▸ **join**<**T**>(`array`: T[], `separator`: string | function): *undefined | string*
 
-*Defined in [index.ts:6](https://github.com/TNThacker2015/randomify/blob/3b088a5/src/index.ts#L6)*
+*Defined in [index.ts:6](https://github.com/TNThacker2015/randomify/blob/a03ec7c/src/index.ts#L6)*
 
 Join an array with a function or string.
 
@@ -42,7 +43,7 @@ ___
 
 ▸ **pick**<**T**>(`array`: T[]): *T*
 
-*Defined in [index.ts:17](https://github.com/TNThacker2015/randomify/blob/3b088a5/src/index.ts#L17)*
+*Defined in [index.ts:17](https://github.com/TNThacker2015/randomify/blob/a03ec7c/src/index.ts#L17)*
 
 ```ts
 const coinFlip = pick(["Tails!", "Heads!"])
@@ -67,7 +68,7 @@ ___
 
 ▸ **pickString**(`str`: string, `len`: number): *string*
 
-*Defined in [index.ts:55](https://github.com/TNThacker2015/randomify/blob/3b088a5/src/index.ts#L55)*
+*Defined in [index.ts:55](https://github.com/TNThacker2015/randomify/blob/a03ec7c/src/index.ts#L55)*
 
 Get a random string from a set of characters.
 ```ts
@@ -89,7 +90,7 @@ ___
 
 ▸ **randint**(`min`: number, `max`: number, `decimals`: boolean): *number*
 
-*Defined in [index.ts:37](https://github.com/TNThacker2015/randomify/blob/3b088a5/src/index.ts#L37)*
+*Defined in [index.ts:37](https://github.com/TNThacker2015/randomify/blob/a03ec7c/src/index.ts#L37)*
 
 ```ts
 randint(1, 5) // 1, 2, 3, 4
@@ -111,9 +112,9 @@ ___
 
 ### `Const` random
 
-▸ **random**(`strings`: TemplateStringsArray, ...`added`: any[]): *undefined | string*
+▸ **random**(`strings`: TemplateStringsArray, ...`added`: any[]): *string*
 
-*Defined in [index.ts:26](https://github.com/TNThacker2015/randomify/blob/3b088a5/src/index.ts#L26)*
+*Defined in [index.ts:26](https://github.com/TNThacker2015/randomify/blob/a03ec7c/src/index.ts#L26)*
 
 ```ts
 random`It is currently ${["daytime", "nighttime", "afternoon"]}. It's time to ${["work", "exercise", "eat"]}!`
@@ -127,7 +128,17 @@ Name | Type | Description |
 `strings` | TemplateStringsArray | The strings from the template literal. |
 `...added` | any[] | The placeholders. They can be either "any" or an array. If it's an array, it will pick a random element from it.  |
 
-**Returns:** *undefined | string*
+**Returns:** *string*
+
+___
+
+### `Const` randomColor
+
+▸ **randomColor**(): *string*
+
+*Defined in [index.ts:59](https://github.com/TNThacker2015/randomify/blob/a03ec7c/src/index.ts#L59)*
+
+**Returns:** *string*
 
 ___
 
@@ -135,7 +146,7 @@ ___
 
 ▸ **range**(`min`: number, `max`: number): *any[]*
 
-*Defined in [index.ts:46](https://github.com/TNThacker2015/randomify/blob/3b088a5/src/index.ts#L46)*
+*Defined in [index.ts:46](https://github.com/TNThacker2015/randomify/blob/a03ec7c/src/index.ts#L46)*
 
 ```ts
 range(1, 7) // [1, 2, 3, 4, 5, 6]
