@@ -1,4 +1,4 @@
-[randomify - v1.1.1](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
+[randomify - v1.1.2](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
 
 # External module: "index"
 
@@ -41,8 +41,11 @@ ___
 
 ▸ **pick**<**T**>(`array`: T[]): *T*
 
-Defined in index.ts:15
+Defined in index.ts:17
 
+```ts
+console.log(pick(["Console log!", "Console message!"]))
+```
 Pick a random element from an array.
 
 **Type parameters:**
@@ -53,7 +56,7 @@ Pick a random element from an array.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`array` | T[] | The array that the element is going to be picked from. |
+`array` | T[] | The array that the element is going to be picked from.  |
 
 **Returns:** *T*
 
@@ -63,8 +66,12 @@ ___
 
 ▸ **randint**(`min`: number, `max`: number, `decimals`: boolean): *number*
 
-Defined in index.ts:33
+Defined in index.ts:37
 
+```ts
+randint(1, 5) // 1, 2, 3, 4
+randint(1, 5, true) // Any float between 1 and 5.
+```
 Returns a random integer from min to max, but never reaching max.
 
 **Parameters:**
@@ -73,7 +80,7 @@ Name | Type | Default | Description |
 ------ | ------ | ------ | ------ |
 `min` | number | - | The minimum value. |
 `max` | number | - | The maximum value. |
-`decimals` | boolean | false | Whether to have decimals in the output. ``` randint(1, 5) // 1, 2, 3, 4 randint(1, 5, true) // Any float between 1 and 5. ```  |
+`decimals` | boolean | false | Whether to have decimals in the output.  |
 
 **Returns:** *number*
 
@@ -83,8 +90,11 @@ ___
 
 ▸ **random**(`strings`: TemplateStringsArray, ...`added`: any[]): *undefined | string*
 
-Defined in index.ts:22
+Defined in index.ts:26
 
+```ts
+random`It is currently ${["daytime", "nighttime", "afternoon"]}. It's time to ${["work", "exercise", "eat"]}!`
+```
 A template literal tag that chooses random elements from its placeholders.
 
 **Parameters:**
@@ -92,7 +102,7 @@ A template literal tag that chooses random elements from its placeholders.
 Name | Type | Description |
 ------ | ------ | ------ |
 `strings` | TemplateStringsArray | The strings from the template literal. |
-`...added` | any[] | The placeholders. They can be either "any" or an array. If it's an array, it will pick a random element from it. |
+`...added` | any[] | The placeholders. They can be either "any" or an array. If it's an array, it will pick a random element from it.  |
 
 **Returns:** *undefined | string*
 
@@ -102,8 +112,11 @@ ___
 
 ▸ **range**(`min`: number, `max`: number): *any[]*
 
-Defined in index.ts:40
+Defined in index.ts:46
 
+```ts
+range(1, 7) // [1, 2, 3, 4, 5, 6]
+```
 Gets a list with values ranging from the min value to max value, excluding the max value.
 
 **Parameters:**
@@ -111,6 +124,6 @@ Gets a list with values ranging from the min value to max value, excluding the m
 Name | Type | Description |
 ------ | ------ | ------ |
 `min` | number | The minimum value. |
-`max` | number | The maximum value. |
+`max` | number | The maximum value.  |
 
 **Returns:** *any[]*
