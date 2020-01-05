@@ -1,4 +1,4 @@
-[randomify - v1.1.2](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
+[randomify - v1.2.2](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
 
 # External module: "index"
 
@@ -8,6 +8,7 @@
 
 * [join](_index_.md#const-join)
 * [pick](_index_.md#const-pick)
+* [pickString](_index_.md#const-pickstring)
 * [randint](_index_.md#const-randint)
 * [random](_index_.md#const-random)
 * [range](_index_.md#const-range)
@@ -18,7 +19,7 @@
 
 ▸ **join**<**T**>(`array`: T[], `separator`: string | function): *undefined | string*
 
-Defined in index.ts:6
+*Defined in [index.ts:6](https://github.com/TNThacker2015/randomify/blob/3b088a5/src/index.ts#L6)*
 
 Join an array with a function or string.
 
@@ -41,10 +42,10 @@ ___
 
 ▸ **pick**<**T**>(`array`: T[]): *T*
 
-Defined in index.ts:17
+*Defined in [index.ts:17](https://github.com/TNThacker2015/randomify/blob/3b088a5/src/index.ts#L17)*
 
 ```ts
-console.log(pick(["Console log!", "Console message!"]))
+const coinFlip = pick(["Tails!", "Heads!"])
 ```
 Pick a random element from an array.
 
@@ -62,11 +63,33 @@ Name | Type | Description |
 
 ___
 
+### `Const` pickString
+
+▸ **pickString**(`str`: string, `len`: number): *string*
+
+*Defined in [index.ts:55](https://github.com/TNThacker2015/randomify/blob/3b088a5/src/index.ts#L55)*
+
+Get a random string from a set of characters.
+```ts
+const ID = pickString("0123456789abcdefABCDEF", 12) // A possible return is "bB0d4D840bfc"
+```
+
+**Parameters:**
+
+Name | Type | Default | Description |
+------ | ------ | ------ | ------ |
+`str` | string | - | The set of characters that the generated string will be picked from. |
+`len` | number |  str.length | The length of the generated string.  |
+
+**Returns:** *string*
+
+___
+
 ### `Const` randint
 
 ▸ **randint**(`min`: number, `max`: number, `decimals`: boolean): *number*
 
-Defined in index.ts:37
+*Defined in [index.ts:37](https://github.com/TNThacker2015/randomify/blob/3b088a5/src/index.ts#L37)*
 
 ```ts
 randint(1, 5) // 1, 2, 3, 4
@@ -90,7 +113,7 @@ ___
 
 ▸ **random**(`strings`: TemplateStringsArray, ...`added`: any[]): *undefined | string*
 
-Defined in index.ts:26
+*Defined in [index.ts:26](https://github.com/TNThacker2015/randomify/blob/3b088a5/src/index.ts#L26)*
 
 ```ts
 random`It is currently ${["daytime", "nighttime", "afternoon"]}. It's time to ${["work", "exercise", "eat"]}!`
@@ -112,7 +135,7 @@ ___
 
 ▸ **range**(`min`: number, `max`: number): *any[]*
 
-Defined in index.ts:46
+*Defined in [index.ts:46](https://github.com/TNThacker2015/randomify/blob/3b088a5/src/index.ts#L46)*
 
 ```ts
 range(1, 7) // [1, 2, 3, 4, 5, 6]
