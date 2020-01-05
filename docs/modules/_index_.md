@@ -1,4 +1,4 @@
-[randomify - v1.3.1](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
+[randomify - v1.3.2](../README.md) › [Globals](../globals.md) › ["index"](_index_.md)
 
 # External module: "index"
 
@@ -18,9 +18,9 @@
 
 ### `Const` join
 
-▸ **join**<**T**>(`array`: T[], `separator`: string | function): *undefined | string*
+▸ **join**<**T**>(`array`: T[], `separator`: string | function): *string*
 
-*Defined in [index.ts:6](https://github.com/TNThacker2015/randomify/blob/b9a4bb5/src/index.ts#L6)*
+*Defined in [index.ts:6](https://github.com/TNThacker2015/randomify/blob/9197677/src/index.ts#L6)*
 
 Join an array with a function or string.
 
@@ -35,7 +35,7 @@ Name | Type | Default | Description |
 `array` | T[] | - | The array to be joined. |
 `separator` | string &#124; function | "," | The separator to be put inbetween the elements in the array. Can be a string or a function.  |
 
-**Returns:** *undefined | string*
+**Returns:** *string*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 ▸ **pick**<**T**>(`array`: T[]): *T*
 
-*Defined in [index.ts:17](https://github.com/TNThacker2015/randomify/blob/b9a4bb5/src/index.ts#L17)*
+*Defined in [index.ts:18](https://github.com/TNThacker2015/randomify/blob/9197677/src/index.ts#L18)*
 
 ```ts
 const coinFlip = pick(["Tails!", "Heads!"])
@@ -68,7 +68,7 @@ ___
 
 ▸ **pickString**(`str`: string, `len`: number): *string*
 
-*Defined in [index.ts:55](https://github.com/TNThacker2015/randomify/blob/b9a4bb5/src/index.ts#L55)*
+*Defined in [index.ts:56](https://github.com/TNThacker2015/randomify/blob/9197677/src/index.ts#L56)*
 
 Get a random string from a set of characters.
 ```ts
@@ -90,7 +90,7 @@ ___
 
 ▸ **randint**(`min`: number, `max`: number, `decimals`: boolean): *number*
 
-*Defined in [index.ts:37](https://github.com/TNThacker2015/randomify/blob/b9a4bb5/src/index.ts#L37)*
+*Defined in [index.ts:38](https://github.com/TNThacker2015/randomify/blob/9197677/src/index.ts#L38)*
 
 ```ts
 randint(1, 5) // 1, 2, 3, 4
@@ -114,7 +114,7 @@ ___
 
 ▸ **random**(`strings`: TemplateStringsArray, ...`added`: any[]): *string*
 
-*Defined in [index.ts:26](https://github.com/TNThacker2015/randomify/blob/b9a4bb5/src/index.ts#L26)*
+*Defined in [index.ts:27](https://github.com/TNThacker2015/randomify/blob/9197677/src/index.ts#L27)*
 
 ```ts
 random`It is currently ${["daytime", "nighttime", "afternoon"]}. It's time to ${["work", "exercise", "eat"]}!`
@@ -136,7 +136,7 @@ ___
 
 ▸ **randomColor**(): *string*
 
-*Defined in [index.ts:59](https://github.com/TNThacker2015/randomify/blob/b9a4bb5/src/index.ts#L59)*
+*Defined in [index.ts:60](https://github.com/TNThacker2015/randomify/blob/9197677/src/index.ts#L60)*
 
 **Returns:** *string*
 
@@ -144,9 +144,9 @@ ___
 
 ### `Const` range
 
-▸ **range**(`min`: number, `max`: number): *any[]*
+▸ **range**(`min`: number, `max`: number): *number[]*
 
-*Defined in [index.ts:46](https://github.com/TNThacker2015/randomify/blob/b9a4bb5/src/index.ts#L46)*
+*Defined in [index.ts:47](https://github.com/TNThacker2015/randomify/blob/9197677/src/index.ts#L47)*
 
 ```ts
 range(1, 7) // [1, 2, 3, 4, 5, 6]
@@ -160,4 +160,4 @@ Name | Type | Description |
 `min` | number | The minimum value. |
 `max` | number | The maximum value.  |
 
-**Returns:** *any[]*
+**Returns:** *number[]*

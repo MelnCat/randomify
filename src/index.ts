@@ -3,9 +3,10 @@
  * @param array - The array to be joined.
  * @param separator - The separator to be put inbetween the elements in the array. Can be a string or a function.
  */
-export const join = <T>(array: T[], separator: string | ((x: T, i: number, a: T[]) => string) = ",") => {
+export const join = <T>(array: T[], separator: string | ((x: T, i: number, a: T[]) => string) = ","): string => {
 	if (typeof separator === "string") return array.reduce((c, t, i, a) => c + (i < array.length - 1 ? t + separator : t), "");
 	else if (separator instanceof Function) return array.reduce((c, t, i, a) => c + (i < array.length - 1 ? t + separator(a[i], i, a) : t), "");
+	else return "";
 };
 /**
  * ```ts
@@ -43,7 +44,7 @@ export const randint = (min: number, max: number, decimals = false) => min > max
  * @param min - The minimum value.
  * @param max - The maximum value.
  */
-export const range = (min: number, max: number) => Array(Math.max(max - min, 0)).fill(0).map((x, i) => x + min + i);
+export const range = (min: number, max: number): number[] => Array(Math.max(max - min, 0)).fill(0).map((x, i) => x + min + i);
 /**
  * Get a random string from a set of characters.
  * ```ts

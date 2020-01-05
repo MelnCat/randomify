@@ -1,6 +1,6 @@
-[randomify - v1.3.1](README.md) › [Globals](globals.md)
+[randomify - v1.3.2](README.md) › [Globals](globals.md)
 
-# randomify - v1.3.1
+# randomify - v1.3.2
 
 ## Index
 
