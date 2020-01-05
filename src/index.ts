@@ -9,7 +9,7 @@ export const join = <T>(array: T[], separator: string | ((x: T, i: number, a: T[
 };
 /**
  * ```ts
- * console.log(pick(["Console log!", "Console message!"]))
+ * const coinFlip = pick(["Tails!", "Heads!"])
  * ```
  * Pick a random element from an array.
  * @param array - The array that the element is going to be picked from.
@@ -44,4 +44,15 @@ export const randint = (min: number, max: number, decimals = false) => min > max
  * @param max - The maximum value.
  */
 export const range = (min: number, max: number) => Array(Math.max(max - min, 0)).fill(0).map((x, i) => x + min + i);
-
+/**
+ * Get a random string from a set of characters.
+ * ```ts
+ * const ID = pickString("0123456789abcdefABCDEF", 12) // A possible return is "bB0d4D840bfc"
+ * ```
+ * @param str The set of characters that the generated string will be picked from.
+ * @param len The length of the generated string.
+ */
+export const pickString = (str: string, len = str.length) => Array(len)
+	.fill(0)
+	.map(() => str[Math.floor(Math.random() * str.length)])
+	.join("");
